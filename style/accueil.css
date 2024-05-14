@@ -1,0 +1,80 @@
+#welcome {
+   display: grid;
+   justify-items: center;
+
+   margin: 2rem 0;
+}
+
+#welcome h1 {
+   background-color: var(--white);
+   padding: 1rem;
+   margin: 0;
+   border-radius: 1rem;
+
+   font-size: 3rem;
+}
+
+
+#welcoming-text {
+   position: relative;
+   background: var(--white);
+   border-radius: 1rem;
+   margin-left: 20rem;
+   margin-right: 5rem;
+   margin-bottom: 14rem;
+   padding: 1.5rem;
+   color: var(--black);
+}
+
+#welcoming-text::before {
+   content: "";
+   background-image: url("../img/test-paragraph.jpg");
+   position: absolute;
+   width: 20rem;
+   height: 20rem;
+   background-size: cover;
+   left: -15rem;
+   z-index: -1;
+   top: 50%;
+}
+
+#welcoming-text:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 78px solid transparent;
+	border-right-color: var(--white);
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -39px;
+	margin-left: -78px;
+}
+
+
+@media only screen and (max-width: 768px) {
+   #welcoming-text {
+      margin: 1.5rem;
+   }
+
+   #welcoming-text::after, #welcoming-text::before {
+      display: none;
+   }
+}
+
+
+#btn-container {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 1rem;
+}
+
+
+#countdown {
+   height: 5rem;
+   text-align: center;
+   background-color: var(--white);
+   margin: 0 2rem;
+}
