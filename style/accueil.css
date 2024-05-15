@@ -78,9 +78,41 @@
 }
 
 
-#countdown {
-   height: 5rem;
+#countdown-container {
+   width: 100%;
+   display: grid;
+   justify-items: center;
+}
+
+#countdown-container > div {
    text-align: center;
    background-color: var(--white);
-   margin: 0 2rem;
+   max-width: 30rem;
+   min-width: fit-content;
+   width: 50%;
+   padding: 1rem;
+
+   display: grid;
+   grid-template-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr
+}
+
+#countdown-container h2 {
+   font-size: 2rem;
+   color: white;
+}
+
+.countdown-text span, h2 {
+   font-family: "Pirata One";
+}
+
+.countdown-text span:first-child { font-size: 2rem; }
+
+.countdown-text {
+   display: flex;
+   flex-direction: column;
+}
+
+.countdown-separator {
+   margin-top: 0.2rem;
+   font-size: 1.7rem;
 }

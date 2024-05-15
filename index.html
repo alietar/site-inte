@@ -74,7 +74,18 @@
             <a href="https://adhesion.asso-insa-lyon.fr/tour/" class="btn btn-slash"><span>To-Do list</span></a>
          </div>
       </div>
-      <div id="countdown">[A faire] Compteur avant inté</div>
+      <div id="countdown-container">
+         <h2>Bientôt l'inté :</h2>
+         <div>
+            <div class="countdown-text"><span id="day"></span><span>Jours</span></div>
+            <span class="countdown-separator">:</span>
+            <div class="countdown-text"><span id="hour"></span><span>Heures</span></div>
+            <span class="countdown-separator">:</span>
+            <div class="countdown-text"><span id="min"></span><span>Minutes</span></div>
+            <span class="countdown-separator">:</span>
+            <div class="countdown-text"><span id="sec"></span><span>Secondes</span></div>
+         </div>
+      </div>
       <main>
          <section class="img-left">
             <div class="img-container"><img class="optional" src="img/illustration/knight.png"/></div>
@@ -140,5 +151,28 @@ On tient à vous rassurer, vous, les parents. Laisser votre futur.e chevalier pa
       </main>
       <footer>
       </footer>
+
+      <script>
+         var countDownDate = new Date("Sep 16, 2024 08:00:00").getTime();
+         let dayElement = document.getElementById("day");
+         let hourElement = document.getElementById("hour");
+         let minElement = document.getElementById("min");
+         let secElement = document.getElementById("sec");
+
+         var x = setInterval(function() {
+           var now = new Date().getTime();
+           var distance = countDownDate - now;
+
+           dayElement.innerHTML = Math.floor(distance / (1000 * 60 * 60 * 24));
+           hourElement.innerHTML = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+           minElement.innerHTML = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+           secElement.innerHTML = Math.floor((distance % (1000 * 60)) / 1000);
+
+           if (distance < 0) {
+             clearInterval(x);
+             document.getElementById("demo").innerHTML = "EXPIRED";
+           }
+         }, 1000);
+      </script>
    </body>
 </html>
