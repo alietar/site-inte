@@ -4,15 +4,17 @@ html, body {
    font-size: 40px;
 
    --blue: #3c4a59;
+   --light-blue: #4d5f73;
    --dark-green: #11511f;
    --light-green: #488e58;
    --cream: #e1d38d;
+   --light-cream: #fff8d6;
    --red: #b00619;
    --orange: #ec6e00;
    --yellow: #f2a633;
    --white: #fbfbfb;
    --light-grey: #f2f2f2;
-   --black: #000;
+   --black: #24242b;
   font-size: calc(11px + 0.293vw);
 }
 
@@ -21,6 +23,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  backdrop-filter: saturate(0.9) brightness(0.95);
 
   display: flex;
   flex-direction: column;
@@ -29,6 +32,8 @@ body {
 
 p, button, a, h1, h2, div {
    font-family: "sans-serif";
+   color: var(--black);
+   margin: 0;
 }
 
 a {
@@ -50,21 +55,78 @@ p {
    height: 4rem;
 }
 
+
+#bde-logo {
+   margin-left: auto;
+   margin-right: 0.5rem;
+   margin-top: 0.5rem;
+   height: 4rem;
+}
+
+#bde-logo img {
+   height: 4rem;
+}
+
+
+
+
 .btn {
-   background-color: var(--white);
+   background-color: var(--cream);
    color: black;
-   border: solid 2px var(--black);
+   /*border: solid 2px var(--black);*/
    border-radius: 99rem;
-   padding: 0.3rem 0.5rem;
+   padding: .7rem 1.5rem;
    cursor: pointer;
 }
+
+.btn-slash {
+   overflow: hidden;
+   position: relative;
+}
+
+.btn-slash span {
+   z-index: 20;
+}
+  
+.btn-slash::after {
+   background: var(--light-grey);
+   content: "";
+   height: 155px;
+   left: -75px;
+   opacity: .2;
+   position: absolute;
+   top: -50px;
+   transform: rotate(35deg);
+   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+   width: 50px;
+   z-index: 10;
+}
+
+.btn-slash:hover::after {
+   left: 120%;
+   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+
+
+.pirata-one {
+   font-family: "Pirata One";
+   font-size: 2rem;
+}
+
+
+
+
+
+
+
 
 
 nav {
    height: 4rem;
    width: 100%;
-   background: var(--white);
-   color: var(--black);
+   background: var(--blue);
 
    position: sticky;
    top: 0;
@@ -89,7 +151,7 @@ nav {
 }
 
 .nav-item a {
-   color: var(--black);
+   color: var(--white);
 
    padding: 1rem 0;
 }
@@ -108,7 +170,7 @@ nav {
 .dropdown {
    opacity: 0;
    z-index: 2;
-   background: var(--light-grey);
+   background: var(--light-blue);
    
    display: flex;
    flex-direction: column;

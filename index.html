@@ -7,16 +7,19 @@
       <link rel="stylesheet" href="style/main.css">
       <link rel="stylesheet" href="style/accueil.css">
       <link rel="icon" href="img/logo/bde.svg">
+
+      <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
    </head>
    <body>
-      <div id="bde-header">
+      <!--<div id="bde-header">
          <a href="https://bde-insa-lyon.fr"><img src="img/logo/bde.svg" alt="logo bde"/></a>
          <a href="https://www.facebook.com/groups/1188300195203078/?ref=share" class="btn">Groupe Facebook</a>
          <a href="https://discord.gg/pBzKAafSQM" class="btn">Serveur Discord</a>
          <a href="https://www.instagram.com/inte.insalyon/" class="btn">Compte Insta</a>
          <a href="http://integration.bde-insa-lyon.fr/wp-content/uploads/2023/05/Questionnaire-de-parrainage-2023.pdf" class="btn">Questionnaire</a>
          <a href="https://adhesion.asso-insa-lyon.fr/tour/" class="btn">Inscriptions VA/WEI</a>
-      </div>
+      </div>-->
       <nav>
          <ul class="navbar-nav">
             <li id="inte-logo"><a href="#"><img src="img/logo/inte.png"/></a></li>
@@ -60,19 +63,21 @@
             <li id="nav-burger" onclick="document.querySelector('.navbar-nav').classList.toggle('active');"><a href="#"><img src="img/menu.svg"/></a></li>
          </ul>
       </nav>
+      <div id="bde-logo"><img src="img/logo/bde.svg" alt="logo bde"/></div>
       <div id="welcome">
-         <h1>Bienvenue !</h1>
+         <h1>Bienvenue</h1>
+         <img src="img/banner.png"/>
       </div>
-         <div id="welcoming-text">Salut à toi jeune bizuth !<br/>Bienvenue sur le site de l’inté ! Ce site a été réalisé avec soin pour te donner toutes les informations dont tu as besoin pour te préparer avant d’arriver à l’INSA.<br/>Commence par lire la page d'accueil (c’est très important). Ensuite, va voir chaque page en cliquant sur les différentes maisons du village qui se trouveront toujours tout en haut du site.<br/><br/>Bonne lecture !<br/>PS : Ce site est optimisé pour PC. Si tu lis depuis un téléphone ou une tablette, il est possible que tu remarques quelques bugs d’affichage…
+      <div id="welcoming-text"><span class="pirata-one">Salut à toi jeune bizuth !</span><br/><br/>Bienvenue sur le site de l’inté ! Ce site a été réalisé avec soin pour te donner toutes les informations dont tu as besoin pour te préparer avant d’arriver à l’INSA.<br/>Commence par lire la page d'accueil (c’est très important). Ensuite, va voir chaque page en cliquant sur les différentes maisons du village qui se trouveront toujours tout en haut du site.<br/><br/>Bonne lecture !<br/>PS : Ce site est optimisé pour PC. Si tu lis depuis un téléphone ou une tablette, il est possible que tu remarques quelques bugs d’affichage…
          <div id="btn-container">
-            <a href="https://adhesion.asso-insa-lyon.fr/tour/" class="btn">Lexique</a>
-            <a href="https://adhesion.asso-insa-lyon.fr/tour/" class="btn">To-Do list</a>
+            <a href="https://adhesion.asso-insa-lyon.fr/tour/" class="btn btn-slash">Lexique</a>
+            <a href="https://adhesion.asso-insa-lyon.fr/tour/" class="btn btn-slash"><span>To-Do list</span></a>
          </div>
       </div>
       <div id="countdown">[A faire] Compteur avant inté</div>
       <main>
          <section class="img-left">
-            <div class="img-container"><img class="optional" src="img/test-paragraph.jpg"/></div>
+            <div class="img-container"><img class="optional" src="img/illustration/knight.png"/></div>
             <div class="text colored-bg" style="background-color: var(--light-green); color: var(--white)">
                <p>Jeune héros, te voilà officiellement nouvel insalien ! Tu vas intégrer l’INSA dans le département FIMI qui durera 2 ans (ou plus pour certains), avant de rejoindre un des 9 départements de l’INSA. Mais avant de penser à ça, il te faut choisir une filière : selon ce que tu as demandé sur Parcoursup, tu sais déjà si tu es Classique, INS’Avenir, SHN ou Bachelor ! Mais certains classiques pourraient partir à l’aventure et tenter d’accéder à une des nombreuses filières internationales ou artistiques du Mont INSA… </p>
             </div>
@@ -99,10 +104,10 @@ Pssst…! Pour les papas et les mamans, un petit texte vous est dédié plus bas
 
                </p>
             </div>
-            <div class="img-container"><img class="optional" src="img/test-paragraph.jpg"/></div>
+            <div class="img-container"><img class="optional" src="img/illustration/knight.png"/></div>
          </section>
          <section class="img-left">
-            <div class="img-container"><img class="optional" src="img/test-paragraph.jpg"/></div>
+            <div class="img-container"><img class="optional" src="img/illustration/knight.png"/></div>
             <div class="text colored-bg" style="background-color: var(--red); color: var(--white)">
                <p>Mot du président du BdE, à avoir avec le/la futur.e pres qui sera bientôt élu !
 </p>
@@ -121,10 +126,10 @@ On te laisse découvrir le site, fouille-le un maximum  pour avoir toutes les in
 
                </p>
             </div>
-            <div class="img-container"><img class="optional" src="img/test-paragraph.jpg"/></div>
+            <div class="img-container"><img class="optional" src="img/illustration/knight.png"/></div>
          </section>
          <section class="img-left">
-            <div class="img-container"><img class="optional" src="img/test-paragraph.jpg"/></div>
+            <div class="img-container"><img class="optional" src="img/illustration/knight.png"/></div>
             <div class="text colored-bg" style="background-color: var(--yellow); color: var(--white)">
                <p>
 On tient à vous rassurer, vous, les parents. Laisser votre futur.e chevalier partir à l’aventure n’est sans doute pas une chose facile. Mais l’INSA est une contrée où entraide et cohésion sont de mise ! Dès son arrivée, votre enfant va être placé entre de bonnes mains : un parrain ou une marraine ! Son ou sa mentor pour bien débuter et répondre à ses questions à la rentrée. De plus, il/elle aura la chance de rejoindre une “miff”, un groupe d’amis de première et deuxième année qui l'aidera à prendre ses marques dès le début de l’année. On tient aussi à vous assurer qu’à l’INSA,on ne tolère aucune forme de bizutage, et les membres du BdE et les deuxièmes années sont tous là pour s’en assurer. Votre chevalier restera dans tous les cas en sécurité et sera maître de son destin ! En bref, pas d’inquiétude, son intégration ne peut que bien se passer. Vous êtes vous aussi invités à visiter ce site dans son intégralité si vous le souhaitez !
