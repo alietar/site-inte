@@ -6,15 +6,17 @@
 }
 
 #welcome h1 {
-   font-size: 5rem;
+   font-size: 4rem;
    font-family: UnifrakturMaguntia;
    color: var(--light-cream);
 }
 
 #welcome img {
    position: fixed;
+   height: 9rem;
    z-index: -1;
-   transform: translateY(-2.2rem);
+   transform: translateY(-16%);
+   max-width: calc(100% - 2rem);
 }
 
 

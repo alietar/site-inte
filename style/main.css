@@ -59,8 +59,9 @@ p {
 #bde-logo {
    margin-left: auto;
    margin-right: 0.5rem;
-   margin-top: 0.5rem;
    height: 4rem;
+   position: sticky;
+   top: 5rem;
 }
 
 #bde-logo img {
@@ -77,6 +78,8 @@ p {
    border-radius: 99rem;
    padding: .7rem 1.5rem;
    cursor: pointer;
+   font-family: "Pirata One";
+   font-size: 1.2rem;
 }
 
 .btn-slash {
@@ -124,7 +127,7 @@ p {
 
 
 nav {
-   height: 4rem;
+   height: 4.5rem;
    width: 100%;
    background: var(--blue);
 
@@ -152,7 +155,8 @@ nav {
 
 .nav-item a {
    color: var(--white);
-
+   font-family: "Pirata One";
+   font-size: 1.3rem;
    padding: 1rem 0;
 }
 
@@ -269,6 +273,10 @@ nav {
       position: initial;
       transform: initial;
       display: none;
+   }
+   
+   .nav-item a {
+      color: var(--blue);
    }
 
    .has-dropdown:focus-within .dropdown   {
